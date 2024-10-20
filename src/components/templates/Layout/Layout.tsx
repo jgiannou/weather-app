@@ -1,12 +1,16 @@
-import { LayoutProps } from "./Layout.types"
+import { ILayoutProps } from "./Layout.types"
+import rainBg from "../../../assets/rain-bg.png"
+import { BackgroundImage } from "../../atoms"
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: ILayoutProps) => {
     return (
-        <div>
-            <aside>
-                WeatherSidebar Component
-            </aside>
-            <main></main>
+        <div
+            className="flex h-screen w-screen"
+        >
+            <BackgroundImage src={rainBg} alt="weather-background" />
+            <main className="flex-1 pt-12 pb-7 px-10 flex flex-col items-center z-10">
+                {children}
+            </main>
         </div>
     )
 }

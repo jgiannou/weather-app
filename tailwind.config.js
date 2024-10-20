@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        'gr': '40px', // glass radius
+      },
+      colors: {
+        'glass-bg': 'rgba(255, 255, 255, 0.27)'
+      }
+    },
   },
   plugins: [],
 }
