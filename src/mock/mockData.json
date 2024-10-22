@@ -1,0 +1,385 @@
+{
+    "cities": [
+        {
+            "city": "London",
+            "currentWeather": {
+                "temperature": 20,
+                "weatherCondition": "Rainy",
+                "date": "Sunday | 12 Dec 2023"
+            },
+            "activities": [
+                {
+                    "imageUrl": "/src/assets/activity1.png",
+                    "distance": "2km"
+                },
+                {
+                    "imageUrl": "/src/assets/activity2.png",
+                    "distance": "1.5km"
+                },
+                {
+                    "imageUrl": "/src/assets/activity3.png",
+                    "distance": "500m"
+                },
+                {
+                    "imageUrl": "/src/assets/activity4.png",
+                    "distance": "3km"
+                }
+            ],
+            "hourlyForecast": [
+                {
+                    "time": "Now",
+                    "temperature": 26,
+                    "windSpeed": "11.7 km/h",
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "time": "22:00",
+                    "temperature": 26,
+                    "windSpeed": "9.3 km/h",
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "time": "00:00",
+                    "temperature": 22,
+                    "windSpeed": "12 km/h",
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "time": "02:00",
+                    "temperature": 16,
+                    "windSpeed": "15 km/h",
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "time": "04:00",
+                    "temperature": 20,
+                    "windSpeed": "15 km/h",
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "time": "06:00",
+                    "temperature": 22,
+                    "windSpeed": "15 km/h",
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "time": "08:00",
+                    "temperature": 16,
+                    "windSpeed": "15 km/h",
+                    "weatherCondition": "nightCloud"
+                }
+            ],
+            "dailyForecast": [
+                {
+                    "day": "SUN",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 30,
+                    "windSpeed": 0.8,
+                    "chanceOfRain": 2,
+                    "uvIndex": 4,
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "day": "MON",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 28,
+                    "windSpeed": 1.0,
+                    "chanceOfRain": 10,
+                    "uvIndex": 5,
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "day": "TUE",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 25,
+                    "windSpeed": 1.5,
+                    "chanceOfRain": 5,
+                    "uvIndex": 3,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "WED",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 32,
+                    "windSpeed": 0.6,
+                    "chanceOfRain": 1,
+                    "uvIndex": 6,
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "day": "THU",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 27,
+                    "windSpeed": 1.2,
+                    "chanceOfRain": 8,
+                    "uvIndex": 4,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "FRI",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 29,
+                    "windSpeed": 1.3,
+                    "chanceOfRain": 0,
+                    "uvIndex": 5,
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "day": "SAT",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 31,
+                    "windSpeed": 1.1,
+                    "chanceOfRain": 2,
+                    "uvIndex": 5,
+                    "weatherCondition": "sunny"
+                }
+            ]
+        },
+        {
+            "city": "New York",
+            "currentWeather": {
+                "temperature": 15,
+                "weatherCondition": "Stormy",
+                "date": "Monday | 13 Dec 2023"
+            },
+            "activities": [
+                {
+                    "imageUrl": "/src/assets/nu1.jpg",
+                    "distance": "5km"
+                },
+                {
+                    "imageUrl": "/src/assets/nu2.jpg",
+                    "distance": "2km"
+                },
+                {
+                    "imageUrl": "/src/assets/nu3.jpg",
+                    "distance": "700m"
+                },
+                {
+                    "imageUrl": "/src/assets/nu4.jpg",
+                    "distance": "1km"
+                }
+            ],
+            "hourlyForecast": [
+                {
+                    "time": "Now",
+                    "temperature": 15,
+                    "windSpeed": "10 km/h",
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "time": "22:00",
+                    "temperature": 13,
+                    "windSpeed": "8 km/h",
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "time": "00:00",
+                    "temperature": 12,
+                    "windSpeed": "12 km/h",
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "time": "08:00",
+                    "temperature": 30,
+                    "windSpeed": "16 km/h",
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "time": "00:00",
+                    "temperature": 12,
+                    "windSpeed": "12 km/h",
+                    "weatherCondition": "nightCloud"
+                }
+            ],
+            "dailyForecast": [
+                {
+                    "day": "SUN",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 28,
+                    "windSpeed": 0.8,
+                    "chanceOfRain": 10,
+                    "uvIndex": 5,
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "day": "MON",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 25,
+                    "windSpeed": 1.1,
+                    "chanceOfRain": 8,
+                    "uvIndex": 3,
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "day": "TUE",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 25,
+                    "windSpeed": 1.5,
+                    "chanceOfRain": 5,
+                    "uvIndex": 3,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "WED",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 32,
+                    "windSpeed": 0.6,
+                    "chanceOfRain": 1,
+                    "uvIndex": 6,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "THU",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 27,
+                    "windSpeed": 1.2,
+                    "chanceOfRain": 8,
+                    "uvIndex": 4,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "FRI",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 19,
+                    "windSpeed": 1.3,
+                    "chanceOfRain": 0,
+                    "uvIndex": 5,
+                    "weatherCondition": "clear"
+                },
+                {
+                    "day": "SAT",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 21,
+                    "windSpeed": 1.4,
+                    "chanceOfRain": 90,
+                    "uvIndex": 5,
+                    "weatherCondition": "rainy"
+                }
+            ]
+        },
+        {
+            "city": "Athens",
+            "currentWeather": {
+                "temperature": 18,
+                "weatherCondition": "Sunny",
+                "date": "Tuesday | 14 Dec 2023"
+            },
+            "activities": [
+                {
+                    "imageUrl": "/src/assets/athens1.jpg",
+                    "distance": "1km"
+                },
+                {
+                    "imageUrl": "/src/assets/athens2.jpg",
+                    "distance": "1km"
+                },
+                {
+                    "imageUrl": "/src/assets/athens3.jpg",
+                    "distance": "2km"
+                },
+                {
+                    "imageUrl": "/src/assets/athens4.jpg",
+                    "distance": "2km"
+                }
+            ],
+            "hourlyForecast": [
+                {
+                    "time": "Now",
+                    "temperature": 28,
+                    "windSpeed": "5 km/h",
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "time": "22:00",
+                    "temperature": 25,
+                    "windSpeed": "4 km/h",
+                    "weatherCondition": "nightCloud"
+                },
+                {
+                    "time": "08:00",
+                    "temperature": 18,
+                    "windSpeed": "5 km/h",
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "time": "12:00",
+                    "temperature": 30,
+                    "windSpeed": "5 km/h",
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "time": "14:00",
+                    "temperature": 34,
+                    "windSpeed": "5 km/h",
+                    "weatherCondition": "sunny"
+                }
+            ],
+            "dailyForecast": [
+                {
+                    "day": "SUN",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 24,
+                    "windSpeed": 1.2,
+                    "chanceOfRain": 3,
+                    "uvIndex": 4,
+                    "weatherCondition": "cloudy"
+                },
+                {
+                    "day": "MON",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 20,
+                    "windSpeed": 1.3,
+                    "chanceOfRain": 5,
+                    "uvIndex": 4,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "TUE",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 25,
+                    "windSpeed": 1.5,
+                    "chanceOfRain": 5,
+                    "uvIndex": 3,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "WED",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 32,
+                    "windSpeed": 0.6,
+                    "chanceOfRain": 2,
+                    "uvIndex": 10,
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "day": "THU",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 27,
+                    "windSpeed": 1.2,
+                    "chanceOfRain": 8,
+                    "uvIndex": 4,
+                    "weatherCondition": "rainy"
+                },
+                {
+                    "day": "FRI",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 29,
+                    "windSpeed": 1.3,
+                    "chanceOfRain": 0,
+                    "uvIndex": 5,
+                    "weatherCondition": "sunny"
+                },
+                {
+                    "day": "SAT",
+                    "time": "8:00 PM GMT",
+                    "realFeel": 31,
+                    "windSpeed": 1.1,
+                    "chanceOfRain": 2,
+                    "uvIndex": 5,
+                    "weatherCondition": "sunny"
+                }
+            ]
+        }
+    ]
+}

@@ -1,27 +1,40 @@
-import { WiDaySunny, WiCloudy, WiRain, WiSnow, WiThunderstorm, WiFog } from 'react-icons/wi';
+import { WiDaySunny, WiCloudy, WiRain, WiSnow, WiThunderstorm, WiFog, WiRaindrop, WiNightAltCloudy } from 'react-icons/wi';
+import { FaTemperatureFull, FaWind } from "react-icons/fa6";
+import { IoMdSunny } from "react-icons/io";
+
 import { IWeatherIconProps } from './WeatherIcon.type';
 
-const WeatherIcon = ({ condition }: IWeatherIconProps) => {
+const WeatherIcon = ({ condition, size }: IWeatherIconProps) => {
     switch (condition.toLowerCase()) {
         case 'sunny':
         case 'clear':
-            return <WiDaySunny size={32} />;
+            return <WiDaySunny size={size || 32} />;
         case 'cloudy':
-            return <WiCloudy size={32} />;
+            return <WiCloudy size={size || 32} />;
         case 'rainy':
         case 'rain':
-            return <WiRain size={32} />;
+            return <WiRain size={size || 32} />;
         case 'snowy':
         case 'snow':
-            return <WiSnow size={32} />;
+            return <WiSnow size={size || 32} />;
         case 'storm':
         case 'thunderstorm':
-            return <WiThunderstorm size={32} />;
+            return <WiThunderstorm size={size || 32} />;
         case 'foggy':
         case 'fog':
-            return <WiFog size={32} />;
+            return <WiFog size={size || 32} />;
+        case 'temperature':
+            return <FaTemperatureFull size={size || 32} />;
+        case 'wind':
+            return <FaWind size={size || 32} />;
+        case 'raindrop':
+            return <WiRaindrop size={size || 32} />;
+        case 'sun':
+            return <IoMdSunny size={size || 32} />;
+        case 'nightCloud':
+            return <WiNightAltCloudy size={size || 32} />;
         default:
-            return <WiDaySunny size={32} />;
+            return <WiDaySunny size={size || 32} />;
     }
 };
 

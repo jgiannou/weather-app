@@ -3,6 +3,6 @@ export interface IHourlyForecastProps {
         time: string;
         temperature: number;
         windSpeed: string;
-        icon: JSX.Element; // Icon for weather condition
+        weatherCondition: string;  // Add the weather condition field
     }[];
 }

@@ -9,7 +9,7 @@ import { IWeatherGridProps } from "./WeatherGrid.types";
 
 const componentMap = {
     [WeatherComponentType.WeatherSidebar]: (props: ISidebarProps) => <WeatherSidebar {...props} />,
-    [WeatherComponentType.HourlyForecast]: (props: IHourlyForecastProps) => <HourlyForecast {...props} />,
+    [WeatherComponentType.HourlyForecast]: (props: IHourlyForecastProps) => <HourlyForecast  {...props} />,
     [WeatherComponentType.ActivitiesList]: (props: IActivitiesListProps) => <ActivitiesList {...props} />,
     [WeatherComponentType.DailyForecast]: (props: IDailyForecastProps) => <DailyForecast {...props} />,
 };
@@ -21,8 +21,8 @@ const WeatherGrid = ({
 }: IWeatherGridProps) => {
     return (
         <div
-            className={`grid grid-cols-1 grid-flow-col sm:grid-cols-[100px_50%_30%] 
-            xl:grid-cols-[100px_3fr_1fr] gap-4 md:${gap} ${className} h-full w-full mt-6`}
+            className={`grid grid-cols-1 grid-flow-row sm:grid-flow-col  sm:grid-cols-[7%_62%_28%] 
+            2xl:grid-cols-[100px_3fr_1fr] gap-2 md:gap-4 md:${gap} ${className} h-full w-full mt-6`}
         >
             {components.map(({ type, props = {}, column }, index) => {
                 const Component = componentMap[type];
@@ -35,20 +35,20 @@ const WeatherGrid = ({
                 let columnClass = '';
                 switch (column) {
                     case 1:
-                        columnClass = 'col-start-1 row-span-2 hidden md:block';
+                        columnClass = 'col-start-1 sm:row-span-2 hidden sm:block';
                         break;
                     case 2:
-                        columnClass = 'col-start-2';
+                        columnClass = 'sm:col-start-2 col-start-1 order-2 sm:order-1';
                         break;
                     case 3:
-                        columnClass = 'col-start-3 row-span-2';
+                        columnClass = 'col-start-1 sm:col-start-3 sm:row-span-2 order-1 sm:order-3';
                         break;
                     default:
                         columnClass = 'col-span-full';
                 }
 
                 return (
-                    <div key={index} className={`min-h-full h-full w-full backdrop-blur-xl bg-glass-bg rounded-gr text-white ${columnClass}`}>
+                    <div key={index} className={`min-h-full h-full w-full sm:backdrop-blur-xl sm:bg-glass-bg rounded-gr text-white ${columnClass}`}>
                         <Component {...props} />
                     </div>
                 );
