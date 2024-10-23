@@ -1,4 +1,3 @@
-// useResponsiveComponents.ts
 import { useMediaQuery } from '@mantine/hooks';
 import { WeatherComponentType } from '../enums/WeatherComponentType';
 

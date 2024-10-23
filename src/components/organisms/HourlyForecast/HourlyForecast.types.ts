@@ -3,6 +3,6 @@ export interface IHourlyForecastProps {
         time: string;
         temperature: number;
         windSpeed: string;
-        weatherCondition: string;  // Add the weather condition field
+        weatherCondition: string;
     }[];
 }

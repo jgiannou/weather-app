@@ -6,14 +6,15 @@ const DailyWeather = ({ day, time, weatherCondition, className }: IDailyWeatherP
     return (
         <div className={className}>
             <div className="flex flex-col items-center cursor-pointer">
-                <span className="text-lg">{day}</span> {/* Day Name */}
-                <WeatherIcon condition={weatherCondition} /> {/* Weather Icon */}
+                <span className="text-lg">{day}</span>
+                <WeatherIcon condition={weatherCondition} />
             </div>
             {time &&
                 <div className="flex flex-row justify-center">
                     <TbClockHour9Filled size={14} />
                     <span className="text-xs w-20">
-                        {time}</span>
+                        {time}
+                    </span>
                 </div>
             }
         </div >

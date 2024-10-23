@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { THREELETTER_WEEK_DAYS } from '../constants/weatherConstants';
 
 /**
  * Hook to get the current day in three-letter uppercase format (e.g., 'MON', 'TUE').
@@ -7,16 +8,22 @@ import { useState, useEffect } from 'react';
  *
  * @example
  * const currentDay = useCurrentDay();
- * console.log(currentDay); // Output: 'MON'
  */
 export const useCurrentDay = (): string => {
     const [currentDay, setCurrentDay] = useState<string>('');
 
     useEffect(() => {
         const getCurrentDay = () => {
-            const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']; // Uppercase abbreviated day names
+            const daysOfWeek = [
+                THREELETTER_WEEK_DAYS.SUN,
+                THREELETTER_WEEK_DAYS.MON,
+                THREELETTER_WEEK_DAYS.TUE,
+                THREELETTER_WEEK_DAYS.WED,
+                THREELETTER_WEEK_DAYS.THU,
+                THREELETTER_WEEK_DAYS.FRI,
+                THREELETTER_WEEK_DAYS.SAT];
             const currentDate = new Date();
-            return daysOfWeek[currentDate.getDay()]; // Get the current day in uppercase three-letter format
+            return daysOfWeek[currentDate.getDay()];
         };
 
         setCurrentDay(getCurrentDay());

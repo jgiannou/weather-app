@@ -8,26 +8,29 @@ import { WeatherSidebarItem } from "../../molecules";
 import { Avatar } from '@mantine/core';
 import avatar from "../../../assets/avatar.png"
 import { useMediaQuery } from "@mantine/hooks";
+import { SIDEBAR_LABELS } from "../../../constants/uiConstants";
 
 const WeatherSidebar = ({ items }: ISidebarProps) => {
     const isTablet = useMediaQuery('(min-width: 641px) and (max-width: 1024px)');;  //Reduce icons sizes for under 640px('sm')
     const responsiveSize = isTablet ? 30 : 50;
+
+    // not looking good here should be moved to a separate file(maybe a config file)
     const sidebarItemMap = {
         [SidebarItemType.Weather]: {
             icon: <IoIosPartlySunny size={responsiveSize} />,
-            label: 'weather',
+            label: SIDEBAR_LABELS.WEATHER,
         },
         [SidebarItemType.Explore]: {
             icon: <MdExplore size={responsiveSize} />,
-            label: 'explore',
+            label: SIDEBAR_LABELS.EXPLORE,
         },
         [SidebarItemType.Cities]: {
             icon: <FaMapMarkerAlt size={responsiveSize} />,
-            label: 'cities',
+            label: SIDEBAR_LABELS.CITIES,
         },
         [SidebarItemType.Settings]: {
             icon: <RiSettings2Fill size={responsiveSize} />,
-            label: 'settings',
+            label: SIDEBAR_LABELS.SETTINGS,
         },
     };
 

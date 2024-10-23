@@ -23,7 +23,7 @@ const DailyForecast = ({ dailyForecastData }: IDailyForecastProps) => {
         if (currentDayIndex !== -1) {
             setActiveSlide(currentDayIndex); // Set the active slide to the current day
         }
-    }, [currentDay, dailyForecastData]); // Re-run when currentDay or dailyForecastData changes
+    }, [currentDay, dailyForecastData]);
 
     return (
         <div className="p-4">
@@ -39,7 +39,7 @@ const DailyForecast = ({ dailyForecastData }: IDailyForecastProps) => {
                 draggable={false}
                 slidesToScroll={1}
                 classNames={{
-                    controls: 'top-5 m-0 p-0', // Custom class to move the controls in line with the slides
+                    controls: 'top-5 m-0 p-0',
                 }}
                 styles={{
                     control: {

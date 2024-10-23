@@ -5,4 +5,4 @@ export const getCurrentDay = () => {
 };
 
 
-// MOVED THIS INTO HOOKS
+// IMPORTANT: MOVED THIS INTO HOOKS

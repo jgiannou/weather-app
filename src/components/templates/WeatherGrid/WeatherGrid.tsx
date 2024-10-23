@@ -1,3 +1,4 @@
+import { COLUMNS } from "../../../constants/uiConstants";
 import { WeatherComponentType } from "../../../enums/WeatherComponentType";
 import { ActivitiesList, HourlyForecast, WeatherSidebar } from "../../organisms";
 import { IActivitiesListProps } from "../../organisms/ActivitiesList/ActivitiesList.type";
@@ -34,13 +35,13 @@ const WeatherGrid = ({
 
                 let columnClass = '';
                 switch (column) {
-                    case 1:
+                    case COLUMNS.COL_1:
                         columnClass = 'col-start-1 sm:row-span-2 hidden sm:block';
                         break;
-                    case 2:
+                    case COLUMNS.COL_2:
                         columnClass = 'sm:col-start-2 col-start-1 order-2 sm:order-1';
                         break;
-                    case 3:
+                    case COLUMNS.COL_3:
                         columnClass = 'col-start-1 sm:col-start-3 sm:row-span-2 order-1 sm:order-3';
                         break;
                     default:

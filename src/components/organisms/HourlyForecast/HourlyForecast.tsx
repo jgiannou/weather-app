@@ -4,6 +4,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { Button } from '@mantine/core';
 import { IHourlyForecastProps } from './HourlyForecast.types';
 import { WeatherIcon } from '../../atoms';
+import { HOURLY_FORECAST } from '../../../constants/weatherConstants';
 
 const HourlyForecast = ({ forecastData }: IHourlyForecastProps) => {
     const isTabletOrLarger = useMediaQuery('(min-width: 640px)');
@@ -25,7 +26,7 @@ const HourlyForecast = ({ forecastData }: IHourlyForecastProps) => {
         <div className="py-3 w-full sm:border-none border border-white sm:backdrop-blur-xl bg-glass-bg rounded-gr sm:backdrop-blur-none sm:bg-transparent">
             <div className="flex flex-row px-9 items-center gap-1 sm:mb-10 mb-5">
                 <TbClockHour9Filled size={16} />
-                <h4 className="text-sm font-semibold">24-hour forecast</h4>
+                <h4 className="text-sm font-semibold">{HOURLY_FORECAST.HOURLY_FORECAST}</h4>
             </div>
             <div className="flex flex-col items-center justify-between sm:h-28  h-44 w-full">
                 <ResponsiveContainer width="100%" height="100%">

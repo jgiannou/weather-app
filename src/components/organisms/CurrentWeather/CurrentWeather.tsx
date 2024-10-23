@@ -14,13 +14,14 @@ const CurrentWeather = ({
 }: ICurrentWeatherProps) => {
     const isTabletOrLarger = useMediaQuery('(min-width: 640px)');
     const [opened, setOpened] = useState(false);
-    const { cities, selectedCity, setSelectedCity } = useWeatherStore();
+    const { cities, selectedCity, setSelectedCity } = useWeatherStore(); //maybe should be props
 
     const cityOptions = cities.map(city => ({
         value: city.city,
         label: city.city
     }));
 
+    // possible to split this component into smaller components for better readability
     return (
         <div className="w-full flex flex-col sm:flex-row justify-between px-1  py-4 sm:py-1  sm:px-14 text-white">
             <div className="flex flex-col justify-between">
