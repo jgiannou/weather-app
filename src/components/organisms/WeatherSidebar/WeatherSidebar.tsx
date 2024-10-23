@@ -11,7 +11,9 @@ import { useMediaQuery } from "@mantine/hooks";
 import { SIDEBAR_LABELS } from "../../../constants/uiConstants";
 
 const WeatherSidebar = ({ items }: ISidebarProps) => {
-    const isTablet = useMediaQuery('(min-width: 641px) and (max-width: 1024px)');;  //Reduce icons sizes for under 640px('sm')
+    const isTablet = useMediaQuery('(min-width: 641px) and (max-width: 1024px)');;
+    const isTabletOrLarger = useMediaQuery('(min-width: 640px)');
+
     const responsiveSize = isTablet ? 30 : 50;
 
     // not looking good here should be moved to a separate file(maybe a config file)
@@ -35,20 +37,22 @@ const WeatherSidebar = ({ items }: ISidebarProps) => {
     };
 
     return (
-        <div className="h-full flex flex-col items-center justify-between p-4">
+        <div className="h-full fixed sm:relative top-0 right-0  sm:flex flex-col items-center justify-between p-4">
             <Avatar className="mb-2" src={avatar} alt="avatar" size={responsiveSize} />
-            <div className="flex flex-col items-center space-y-6 text-white space-around">
-                {items.map((item) => {
-                    const sidebarItem = sidebarItemMap[item];
-                    if (!sidebarItem) {
-                        console.warn(`No WeatherSidebar item found for: ${item}`);
-                        return null;
-                    }
-                    return (
-                        <WeatherSidebarItem key={item} icon={sidebarItem.icon} label={sidebarItem.label} />
-                    );
-                })}
-            </div>
+            {isTabletOrLarger &&
+                <div className="flex flex-col items-center space-y-6 text-white space-around">
+                    {items.map((item) => {
+                        const sidebarItem = sidebarItemMap[item];
+                        if (!sidebarItem) {
+                            console.warn(`No WeatherSidebar item found for: ${item}`);
+                            return null;
+                        }
+                        return (
+                            <WeatherSidebarItem key={item} icon={sidebarItem.icon} label={sidebarItem.label} />
+                        );
+                    })}
+                </div>
+            }
         </div>
 
 

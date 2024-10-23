@@ -6,8 +6,7 @@ export const useResponsiveComponents = (components) => {
 
     return components.filter(component => {
         if (
-            (component.type === WeatherComponentType.ActivitiesList ||
-                component.type === WeatherComponentType.WeatherSidebar) &&
+            (component.type === WeatherComponentType.ActivitiesList) &&
             !isTabletOrLarger) {
             return false;
         }

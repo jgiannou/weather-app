@@ -36,7 +36,7 @@ const WeatherGrid = ({
                 let columnClass = '';
                 switch (column) {
                     case COLUMNS.COL_1:
-                        columnClass = 'col-start-1 sm:row-span-2 hidden sm:block';
+                        columnClass = 'col-start-1 sm:row-span-2 sm:block';
                         break;
                     case COLUMNS.COL_2:
                         columnClass = 'sm:col-start-2 col-start-1 order-2 sm:order-1';
