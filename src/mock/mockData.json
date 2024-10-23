@@ -9,19 +9,19 @@
             },
             "activities": [
                 {
-                    "imageUrl": "/src/assets/activity1.png",
+                    "imageUrl": "/images/activity1.png",
                     "distance": "2km"
                 },
                 {
-                    "imageUrl": "/src/assets/activity2.png",
+                    "imageUrl": "/images/activity2.png",
                     "distance": "1.5km"
                 },
                 {
-                    "imageUrl": "/src/assets/activity3.png",
+                    "imageUrl": "/images/activity3.png",
                     "distance": "500m"
                 },
                 {
-                    "imageUrl": "/src/assets/activity4.png",
+                    "imageUrl": "/images/activity4.png",
                     "distance": "3km"
                 }
             ],
@@ -144,19 +144,19 @@
             },
             "activities": [
                 {
-                    "imageUrl": "/src/assets/nu1.jpg",
+                    "imageUrl": "/images/nu1.jpg",
                     "distance": "5km"
                 },
                 {
-                    "imageUrl": "/src/assets/nu2.jpg",
+                    "imageUrl": "/images/nu2.jpg",
                     "distance": "2km"
                 },
                 {
-                    "imageUrl": "/src/assets/nu3.jpg",
+                    "imageUrl": "/images/nu3.jpg",
                     "distance": "700m"
                 },
                 {
-                    "imageUrl": "/src/assets/nu4.jpg",
+                    "imageUrl": "/images/nu4.jpg",
                     "distance": "1km"
                 }
             ],
@@ -267,19 +267,19 @@
             },
             "activities": [
                 {
-                    "imageUrl": "/src/assets/athens1.jpg",
+                    "imageUrl": "/images/athens1.jpg",
                     "distance": "1km"
                 },
                 {
-                    "imageUrl": "/src/assets/athens2.jpg",
+                    "imageUrl": "/images/athens2.jpg",
                     "distance": "1km"
                 },
                 {
-                    "imageUrl": "/src/assets/athens3.jpg",
+                    "imageUrl": "/images/athens3.jpg",
                     "distance": "2km"
                 },
                 {
-                    "imageUrl": "/src/assets/athens4.jpg",
+                    "imageUrl": "/images/athens4.jpg",
                     "distance": "2km"
                 }
             ],
